@@ -56,3 +56,10 @@ VALUES (
         '1234' , 
         (SELECT idp FROM person WHERE firstName= 'Aden' AND lastName= 'Episcopio')
 );
+
+INSERT INTO person (idp, firstName, lastName, dob)
+VALUES (3, 'Max', 'Mule', DATE '1991-04-06');
+
+SELECT * FROM person;
+
+SELECT * FROM dose;
