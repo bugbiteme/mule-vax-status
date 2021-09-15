@@ -1,0 +1,1 @@
+# mule-vax-status
