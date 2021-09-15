@@ -4,15 +4,17 @@
 
 Once up and running you can test the API with the following calls:
 
+```
 curl --location --request GET 'http://localhost:8081/api/vaccine-status?firstName=Jack&lastName=Sheppard&dob=1992-05-18'
 
 curl --location --request GET 'http://localhost:8081/api/vaccine-status?firstName=Aden&lastName=Episcopio&dob=1994-09-11'
 
 curl --location --request GET 'http://localhost:8081/api/vaccine-status?firstName=Max&lastName=Mule&dob=1991-04-06'
+```
 
 ## Expected output
 
-```
+```json
 ❯ curl --location --request GET 'http://localhost:8081/api/vaccine-status?firstName=Jack&lastName=Sheppard&dob=1992-05-18'
 {
   "firstName": "Jack",
@@ -35,7 +37,7 @@ curl --location --request GET 'http://localhost:8081/api/vaccine-status?firstNam
 }
 ```
 
-```
+```json
 ❯ curl --location --request GET 'http://localhost:8081/api/vaccine-status?firstName=Aden&lastName=Episcopio&dob=1994-09-11'
 {
   "firstName": "Aden",
@@ -52,7 +54,7 @@ curl --location --request GET 'http://localhost:8081/api/vaccine-status?firstNam
 }
 ```
 
-```
+```json
 ❯ curl --location --request GET 'http://localhost:8081/api/vaccine-status?firstName=Max&lastName=Mule&dob=1991-04-06'
 {
   "firstName": "",
