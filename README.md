@@ -69,9 +69,9 @@ curl --location --request GET 'http://localhost:8081/api/vaccine-status?firstNam
 
 ```
 
-curl --location --request GET 'mule-vax-patient.us-w1.cloudhub.io/api/vaccine-status?firstName=Jack&lastName=Sheppard&dob=1992-05-18'
+curl --location --request GET 'http://mule-vax-patient.us-w1.cloudhub.io/api/vaccine-status?firstName=Jack&lastName=Sheppard&dob=1992-05-18'
 
-curl --location --request GET 'mule-vax-patient.us-w1.cloudhub.io/api/vaccine-status?firstName=Aden&lastName=Episcopio&dob=1994-09-11'
+curl --location --request GET 'http://mule-vax-patient.us-w1.cloudhub.io/api/vaccine-status?firstName=Aden&lastName=Episcopio&dob=1994-09-11'
 
 curl --location --request GET 'http://mule-vax-patient.us-w1.cloudhub.io/api/vaccine-status?firstName=Max&lastName=Mule&dob=1991-04-06'
 
