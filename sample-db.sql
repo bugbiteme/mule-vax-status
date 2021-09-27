@@ -66,7 +66,7 @@ VALUES (4, 'John', 'Talksalot', DATE '1981-10-25');
 
 INSERT INTO dose (maker, doa, provider, lotNumber, fk_idp)
 VALUES ( 
-		'Pfizer', 
+		'Moderna', 
         '4/19/21', 
         'WALGREENS', 
         '5678' , 
