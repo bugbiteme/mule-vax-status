@@ -57,8 +57,21 @@ VALUES (
         (SELECT idp FROM person WHERE firstName= 'Aden' AND lastName= 'Episcopio')
 );
 
+
 INSERT INTO person (idp, firstName, lastName, dob)
 VALUES (3, 'Max', 'Mule', DATE '1991-04-06');
+
+INSERT INTO person (idp, firstName, lastName, dob)
+VALUES (4, 'John', 'Talksalot', DATE '1981-10-25');
+
+INSERT INTO dose (maker, doa, provider, lotNumber, fk_idp)
+VALUES ( 
+		'Pfizer', 
+        '4/19/21', 
+        'WALGREENS', 
+        '5678' , 
+        (SELECT idp FROM person WHERE firstName= 'John' AND lastName= 'Talksalot')
+);
 
 SELECT * FROM person;
 
