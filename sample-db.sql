@@ -25,7 +25,7 @@ CREATE TABLE `dose` (
 
 
 INSERT INTO person (idp, firstName, lastName, dob)
-VALUES (1, 'Jack', 'Sheppard', DATE '1992-05-18');
+VALUES (1, 'Jack', 'Shepard', DATE '1992-05-18');
 
 INSERT INTO dose (maker, doa, provider, lotNumber, fk_idp)
 VALUES ( 
@@ -33,7 +33,7 @@ VALUES (
         '3/22/21', 
         'LAX', 
         '1234' , 
-        (SELECT idp FROM person WHERE firstName= 'Jack' AND lastName= 'Sheppard')
+        (SELECT idp FROM person WHERE firstName= 'Jack' AND lastName= 'Shepard')
 );
 
 INSERT INTO dose (maker, doa, provider, lotNumber, fk_idp)
@@ -42,7 +42,7 @@ VALUES (
         '4/19/21', 
         'WALGREENS', 
         '5678' , 
-        (SELECT idp FROM person WHERE firstName= 'Jack' AND lastName= 'Sheppard')
+        (SELECT idp FROM person WHERE firstName= 'Jack' AND lastName= 'Shepard')
 );
 
 INSERT INTO person (idp, firstName, lastName, dob)
