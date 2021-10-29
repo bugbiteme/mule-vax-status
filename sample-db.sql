@@ -45,6 +45,15 @@ VALUES (
         (SELECT idp FROM person WHERE firstName= 'Jack' AND lastName= 'Shepard')
 );
 
+INSERT INTO dose (maker, doa, provider, lotNumber, fk_idp)
+VALUES ( 
+		'Pfizer', 
+        '10/28/21', 
+        'WAG6613', 
+        'FF2593' , 
+        (SELECT idp FROM person WHERE firstName= 'Jack' AND lastName= 'Shepard')
+);
+
 INSERT INTO person (idp, firstName, lastName, dob)
 VALUES (2, 'Aden', 'Episcopio', DATE '1994-09-11');
 
@@ -86,4 +95,4 @@ INNER JOIN
 ON
     person.idp=dose.fk_idp
 WHERE 
-    person.firstName='Jack' AND person.lastName='Sheppard' AND person.dob='1992-05-18';
+    person.firstName='Jack' AND person.lastName='Shepard' AND person.dob='1992-05-18';
